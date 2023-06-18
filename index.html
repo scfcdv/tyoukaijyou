@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>超階乗</title>
+</head>
+<body>
+<input type="number" id="inputNumber"><button onclick="calculate()">計算</button>
+<p id="result"></p>
+<script>
+function calculate() {
+let n = document.getElementById("inputNumber").value;
+let result = 1;
+for (let i = 1; i <= n; i++) {
+result *= Math.pow(i, i);}
+document.getElementById("result").innerHTML = result;}
+</script>
+</body>
+</html>
